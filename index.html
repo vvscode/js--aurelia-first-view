@@ -1,14 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Aurelia</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body aurelia-app>
 <script src="jspm_packages/system.js"></script>
 <script src="config.js"></script>
 <script>
-    System.import('js/app');
+    SystemJS.import('aurelia-bootstrapper');
 </script>
 </body>
 </html>
