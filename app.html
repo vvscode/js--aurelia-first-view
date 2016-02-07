@@ -1,19 +1,30 @@
 <template>
-    <h1>${message}</h1>
-    <button click.trigger="onClick()">Click me!</button>
+    <nav class="navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Movies!</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>${message}</h1>
+        <button click.trigger="onClick()">Click me!</button>
 
-    <div>You have ${movies.length} movies</div>
-    <table>
-        <tr>
-            <td>Id</td>
-            <td>Year</td>
-            <td>Name</td>
-        </tr>
-        <tr repeat.for="movie of movies">
-            <td>${movie.id}</td>
-            <td>${movie.year}</td>
-            <td>${movie.name}</td>
-        </tr>
-    </table>
-    <compose view-model="currentDate"></compose>
+        <div>You have ${movies.length} movies</div>
+        <table class="table">
+            <tr>
+                <td>Id</td>
+                <td>Year</td>
+                <td>Name</td>
+            </tr>
+            <tr repeat.for="movie of movies">
+                <td>${movie.id}</td>
+                <td>${movie.year}</td>
+                <td>${movie.name}</td>
+            </tr>
+        </table>
+        <compose view-model="currentDate"></compose>
+    </div>
+
+
 </template>
