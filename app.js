@@ -2,9 +2,15 @@ import {HttpClient} from 'aurelia-http-client';
 import { sayHello } from 'greeter';
 
 export class App {
-  constructor() {
+  static inject() {
+    return [
+      HttpClient
+    ];
+  }
+
+  constructor(httpClient) {
     this.message = '';
-    this.http = new HttpClient();
+    this.http = httpClient;
   }
 
   activate() {
