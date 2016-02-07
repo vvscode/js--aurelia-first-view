@@ -2,6 +2,16 @@
   {
     "id": 1,
     "year": 1999,
-    "name": "Some name"
+    "name": "Some name 1"
+  },
+  {
+    "id": 2,
+    "year": 1987,
+    "name": "Some name 2"
+  },
+  {
+    "id": 3,
+    "year": 2000,
+    "name": "Some name 3"
   }
 ]
