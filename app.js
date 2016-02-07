@@ -1,13 +1,9 @@
 import {HttpClient} from 'aurelia-http-client';
 import { sayHello } from 'greeter';
+import {inject} from "aurelia-framework";
 
+@inject(HttpClient)
 export class App {
-  static inject() {
-    return [
-      HttpClient
-    ];
-  }
-
   constructor(httpClient) {
     this.message = '';
     this.http = httpClient;
