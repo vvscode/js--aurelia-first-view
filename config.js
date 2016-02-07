@@ -21,6 +21,7 @@ System.config({
     "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.1.1",
     "aurelia-history": "npm:aurelia-history@1.0.0-beta.1.1.1",
     "aurelia-history-browser": "npm:aurelia-history-browser@1.0.0-beta.1.1.1",
+    "aurelia-http-client": "npm:aurelia-http-client@1.0.0-beta.1.1.0",
     "aurelia-loader": "npm:aurelia-loader@1.0.0-beta.1.1.0",
     "aurelia-loader-default": "npm:aurelia-loader-default@1.0.0-beta.1.1.1",
     "aurelia-logging": "npm:aurelia-logging@1.0.0-beta.1.1.1",
