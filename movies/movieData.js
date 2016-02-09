@@ -11,11 +11,13 @@ export class MovieData {
 
   getAll() {
     return this.http.get(baseUrl)
+      .then((data) => new Promise((resolve) => setTimeout(() => resolve(data), 3000)))
       .then((response) => response.content);
   }
 
   getById(id) {
     return this.http.get(baseUrl)
+      .then((data) => new Promise((resolve) => setTimeout(() => resolve(data), 3000)))
       .then((response) => response.content.find((item) => item.id == id));
   }
 }
