@@ -4,27 +4,14 @@
             <div class="navbar-header">
                 <a href="#" class="navbar-brand">Movies!</a>
             </div>
+            <ul class="nav navbar-nav">
+                <li repeat.for="row of router.navigation">
+                    <a href.bind="row.href">${row.title}</a>
+                </li>
+            </ul>
         </div>
     </nav>
-    <div class="container">
-        <h1>${message}</h1>
-        <button click.trigger="onClick()">Click me!</button>
 
-        <div>You have ${movies.length} movies</div>
-        <table class="table">
-            <tr>
-                <td>Id</td>
-                <td>Year</td>
-                <td>Name</td>
-            </tr>
-            <tr repeat.for="movie of movies">
-                <td>${movie.id}</td>
-                <td>${movie.year}</td>
-                <td>${movie.name}</td>
-            </tr>
-        </table>
-        <compose view-model="currentDate"></compose>
-    </div>
-
+    <router-view></router-view>
 
 </template>
