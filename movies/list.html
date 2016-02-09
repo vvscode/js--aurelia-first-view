@@ -6,14 +6,16 @@
         <div>You have ${movies.length} movies</div>
         <table class="table">
             <tr>
-                <td>Id</td>
-                <td>Year</td>
-                <td>Name</td>
+                <th>Id</th>
+                <th>Year</th>
+                <th>Name</th>
+                <th></th>
             </tr>
             <tr repeat.for="movie of movies">
                 <td>${movie.id}</td>
                 <td>${movie.year}</td>
                 <td>${movie.name}</td>
+                <td><a route-href="route:details; params.bind:{id:movie.id}" class="btn btn-default">Details</a></td>
             </tr>
         </table>
         <compose view-model="currentDate"></compose>
