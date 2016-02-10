@@ -8,7 +8,7 @@
             </div>
 
             <div class="panel-body">
-                <form action="" class="form-horizontal">
+                <form submit.trigger="save()" validate.bind="validation" class="form-horizontal">
                     <div class="form-group">
                         <label for="movie-title" class="col-sm-2 control-label">Title</label>
                         <div class="col-sm-10">
@@ -21,7 +21,7 @@
                             <input type="text" id="movie-year" placeholder="Year" class="form-control" value.bind="movie.year" >
                         </div>
                     </div>
-                    <button class="btn btn-primary" click.trigger="save()">Save</button>
+                    <input disabled.bind="!validation.result.isValid" value="submit" class="btn btn-primary" value="Save"/>
                 </form>
             </div>
         </div>

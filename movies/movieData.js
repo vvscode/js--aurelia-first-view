@@ -13,11 +13,11 @@ export class MovieData {
 
   getAll() {
     if(this.data) {
-      return new Promise((resolve) => setTimeout(() => resolve(this.data), 1000))
+      return new Promise((resolve) => setTimeout(() => resolve(this.data), 500))
     }
 
     return this.http.get(baseUrl)
-      .then((data) => new Promise((resolve) => setTimeout(() => resolve(data), 3000)))
+      .then((data) => new Promise((resolve) => setTimeout(() => resolve(data), 1000)))
       .then((response) => this.data = response.content);
   }
 
@@ -28,6 +28,6 @@ export class MovieData {
 
   save(movie) {
     // fake instead of http request
-    return new Promise((resolve) => setTimeout(() => resolve(movie), 1000))
+    return new Promise((resolve) => setTimeout(() => resolve(movie), 500))
   }
 }
