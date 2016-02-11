@@ -1,3 +1,3 @@
 export function configure(aurelia) {
-  aurelia.globalResources("nav-menu");
+  aurelia.globalResources(["nav-menu", "current-date"]);
 }
